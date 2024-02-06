@@ -5,6 +5,7 @@
     --nav-list-button-color: #1992d4;
     --project-card-border-color: #f0b429;
     --project-page-background-color: #e2e8f0;
+    font-family: "Roboto";
 }
 
 .grid-container {
@@ -20,8 +21,7 @@
     grid-column: 1 / 2;
     grid-row: span 4;
     background-color: var(--nav-list-button-color);
-
-    display: inline-flex;
+    
 }
 
 .grid-container--nav {
@@ -46,4 +46,42 @@
     grid-column: 4 / 5;
     grid-row: 4 / 5;
     background: var(--project-page-background-color);
+}
+
+.grid-container--sidebar--text-icon-wrapper {
+    display: inline-flex;
+    width: 12rem;
+    height: 3rem;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.sidebar-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.grid-container--sidebar--menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+
+.menu-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 18px;
+}
+
+.menu-container-flex {
+    display: flex;
+    align-items: center;
 }
