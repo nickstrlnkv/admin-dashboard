@@ -5,6 +5,7 @@
     --nav-list-button-color: #1992d4;
     --project-card-border-color: #f0b429;
     --project-page-background-color: #e2e8f0;
+    --nav-bar-search-color: #e2e8f0;
     font-family: "Roboto";
 }
 
@@ -28,6 +29,13 @@
     grid-column: 2 / 5;
     grid-row: span 1;
     background-color: white;
+    -webkit-box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .grid-container--projects-list {
@@ -84,4 +92,106 @@
 .menu-container-flex {
     display: flex;
     align-items: center;
+}
+
+.grid-container--nav--first-row {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+}
+
+.grid-container--nav--input-search {
+    width: 50rem;
+    height: 1.5rem;
+    background-color: var(--nav-bar-search-color);
+    border: 0;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.grid-container--nav--profile-photo {
+    width: 50px;
+    height: 50px;
+    background-image: url("../imgs/Avatar-Maker.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 25px;
+}
+
+.grid-container--nav--user-name {
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+.grid-container--nav--first-row--img-magnify {
+    margin-left: 50px;
+}
+
+.grid-container--nav--first-row--bell-ring {
+    margin-left: 15rem;
+}
+
+.grid-container--nav--profile-photo {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid-container--nav--second-row--greeting-text {
+    font-weight: bold;
+    margin: 0;
+}
+
+.grid-container--nav--second-row {
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.grid-container--nav--second-row .grid-container--nav--profile-photo {
+    width: 75px;
+    height: 75px;
+    margin: 2px 5px 0px 50px;
+}
+
+.grid-container--nav--second-row--greeting-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.grid-container--nav--second-row--greeting {
+    margin-top: 15px;
+}
+
+.grid-container--nav--second-row--button {
+    background-color: var(--side-bar-bg-color);
+    border: none;
+    width: 6rem;
+    height: 2.3rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.grid-container--nav--second-row--button:hover {
+    border: 2px solid var(--side-bar-bg-color);
+    background-color: white;
+    color: var(--side-bar-bg-color);
+}
+
+.grid-container--nav--second-row--buttons {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 65rem;
+}
+
+.grid-container--projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
 }
