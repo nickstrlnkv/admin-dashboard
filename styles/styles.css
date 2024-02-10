@@ -88,11 +88,19 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin-left: 18px;
+    background-color: transparent;
+    transition-duration: 0.2s;
+    border: none;
 }
 
 .menu-container-flex {
     display: flex;
     align-items: center;
+    transition-duration: 0.2s;
+}
+
+.menu-container-flex:hover > * {
+    color: var(--project-card-border-color);
 }
 
 .grid-container--nav--first-row {
@@ -215,6 +223,8 @@
     -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .grid-container--projects-list--info-card:hover {
@@ -275,6 +285,9 @@
     grid-template-rows: 1fr 1fr 1fr 0.2fr;
     background-color: white;
     border-radius: 12px;
+    -webkit-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .grid-container--announcements--info-container--info-text--desc-text {
